@@ -1,0 +1,36 @@
+# Database (выберите один из двух вариантов)
+# Вариант 1: Только asyncpg для async работы
+asyncpg>=0.29.0
+
+# Вариант 2: Оба драйвера (если нужна обратная совместимость)
+# psycopg2-binary>=2.9.9
+# asyncpg>=0.29.0
+
+# SQLAlchemy ORM
+sqlalchemy>=2.0.25
+sqlalchemy[asyncio]>=2.0.25
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Telegram Bot Framework
+aiogram>=3.3.0
+
+# FastAPI (опционально, для API endpoints)
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# Redis (для кэширования и FSM)
+redis>=5.0.1
+aioredis>=2.0.1
+
+# Validation
+pydantic>=2.5.3
+
+# Testing (опционально)
+pytest>=7.4.4
+pytest-asyncio>=0.23.3
+
+# Code quality (опционально)
+black>=23.12.1
+ruff>=0.1.11
